@@ -21,8 +21,8 @@ const server = http.createServer((req, res) => {
             body.push(chunk); //push each piece of data into the array "body".
         });
         req.on("end", () => { //when data is completely parsed ...
-            const parsedBody = Buffer.concat(body).toString()[1]; //buffer the data. i.e. accumilate the data and parse them.
-            const message = parsedBody;
+            const parsedBody = Buffer.concat(body).toString(); //buffer the data. i.e. accumilate the data and parse them.
+            const message = parsedBody.split("=")[1];
             console.log(parsedBody);
             fs.writeFileSync("message.txt", message);
         });
