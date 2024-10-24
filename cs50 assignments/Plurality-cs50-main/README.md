@@ -1,1 +1,3 @@
 # Plurality-cs50
+The CS50 assignment "Plurality" involves writing a program that simulates a plurality voting system. In this system, each voter casts a vote for one candidate, and the candidate with the most votes wins. The program should be able to handle multiple candidates and determine the winner (or winners in case of a tie) based on the votes cast.
+The algorithm used in this assignment typically involves: Reading the number of candidates and their names, then reading the number of voters and their votes, then counting the votes for each candidate, and then determining the winner by identifying the candidate(s) with the highest number of votes.
