@@ -1,1 +1,3 @@
 # cash-cs50
+This is program that calculates the minimum number of coins required to give a user change. The user inputs the amount of change owed, and the program outputs the least number of coins needed to make that change using U.S. currency denominations (quarters, dimes, nickels, and pennies).
+The algorithm used in this assignment is a greedy algorithm. A greedy algorithm always takes the best immediate, or local, solution at each step with the hope of finding the global optimum. For the "Cash" problem, this means always using the largest coin denomination possible at each step to minimize the total number of coins given as change
